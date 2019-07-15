@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 6,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -38,6 +38,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"linecount" : 15,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 271.0, 320.0, 50.0, 210.0 ],
+					"style" : "",
+					"text" : "/wax9 0.018555 0.042969 -1.036133 -0.42 1.05 -0.56 -68.5 86.3 -49.9 54414 124580942"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-46",
@@ -190,14 +204,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-28",
-					"linecount" : 4,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 414.0, 570.0, 53.0, 62.0 ],
+					"patching_rect" : [ 414.0, 570.0, 53.0, 89.0 ],
 					"style" : "",
-					"text" : "-0.03125 -0.03125 0.875"
+					"text" : "0.018555 0.043945 -1.035156"
 				}
 
 			}
@@ -370,7 +384,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -768,7 +782,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -958,7 +972,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1226,9 +1240,10 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 391.0, 57.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.5, 91.0, 70.0, 20.0 ],
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 162.5, 91.0, 70.0, 47.0 ],
 					"style" : "",
-					"text" : "WAX ID"
+					"text" : "WAX ID (only for wax3)"
 				}
 
 			}
@@ -1262,7 +1277,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 6,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1856,6 +1871,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-48", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1963,7 +1987,17 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "wax_setup.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/Gestural-Sound-Toolkit/mod-interfaces/wax/Configuration",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+ ],
 		"embedsnapshot" : 0
 	}
 
